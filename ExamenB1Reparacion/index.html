@@ -1,0 +1,69 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans:wght@100;900&family=Tangerine:wght@700&display=swap');
+</style>
+
+<html>
+<head>
+<title>Ingreso de claves</title>
+<script>
+function comprobarClave(){
+    clave1 = document.f1.clave1.value
+    clave2 = document.f1.clave2.value
+     
+
+    if (clave1 == "Diego" && clave2 == "Constanza"){
+       alert("Las claves son correctas, enhorabuena...\n Sea bienvenido");
+        var href =  "dos.html";
+        window.location=href;
+         }
+       
+    else{
+       alert("Las dos claves son distintas...\nIntentelo nuevamente porfavor.");
+        var href =  "index.html";
+        window.location=href;
+    };
+       
+}  
+</script>
+</head>
+<link rel="stylesheet"type="text/css" href="stylesindex.css">
+<body>
+<h1><b>Sea bienvenido</b></h1>
+<h2>Porfavor introduzca la contraseña</h2>
+<br>
+Al escribir la clave proporcionada por mi en cada campo, verificara si son correctas, Javascript dira si estas en lo correcto.
+    <div class="icono">
+     <img src="icono.png"
+        width="7%">
+    </div>
+<div class="cubo">
+<div class="cubocubo">
+<form action="" name="f1">
+<br> Introduzca las claves
+<br>
+<br>Clave 1:
+<input type="password" name="clave1" size="20">
+<br> Clave 2: 
+<input type="password" name="clave2" size="20">
+<br>
+<br>
+<input type="button" value="Verifica que sean las correctas" onClick="comprobarClave()">
+</dv>
+</dv>
+</form>
+
+ <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+
+</body>
+</html>
